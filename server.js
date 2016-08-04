@@ -8,13 +8,13 @@ var PORT = process.env.PORT || 3000;
 var server =  http.createServer(app);
 var io = socketIo.listen(server);
 //server.listen(PORT);
-http.listen(PORT, function(){
+server.listen(PORT, function(){
   console.log('server started');
 });
 
 // add directory with our static files
 app.use(express.static(__dirname + '/public'));
-console.log("Server running on 127.0.0.1:8080");
+console.log("Server running on 127.0.0.1:3000");
 
 
 // array of all lines drawn
