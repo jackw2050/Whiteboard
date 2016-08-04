@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>MiniDoodle</title>
+      <title>Interview Whiteboard</title>
       <meta charset="utf-8">
       <link rel="stylesheet" href="style.css" />
       <script src="socket.io/socket.io.js"></script>
       <script src="client.js"></script>
    </head>
    <body>
+<h3>What will the code below output to the console and why?</h3>
+<p>
+   var myObject = {<br>
+    foo: "bar",<br>
+    func: function() {<br>
+        var self = this;<br>
+        console.log("outer func:  this.foo = " + this.foo);<br>
+        console.log("outer func:  self.foo = " + self.foo);<br>
+        (function() {<br>
+            console.log("inner func:  this.foo = " + this.foo);<br>
+            console.log("inner func:  self.foo = " + self.foo);<br>
+        }());<br>
+    }<br>
+};<br>
+myObject.func();
+</p>
+
       <canvas id="drawing"></canvas>
    </body>
 </html>
