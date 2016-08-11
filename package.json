@@ -1,12 +1,20 @@
 {
-  "name": "MiniDoodle",
-  "description": "Collaborative drawing canvas",
-  "author": "Code-and.Coffee",
-  "dependencies": {
-    "express": "4.x",
-    "socket.io": "*"
+  "name": "sockets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/test-chat.js"
   },
   "devDependencies": {
-    "nodemon": "^1.10.0"
+    "test": ">=0.0.5"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.13.3",
+    "moment": "^2.10.6",
+    "socket.io": "^1.3.7"
   }
 }
